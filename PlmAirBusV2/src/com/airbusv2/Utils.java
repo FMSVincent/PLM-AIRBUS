@@ -8,16 +8,46 @@ public class Utils {
 	
 	// verif que l utilisateur rentre un int et le renvoi
 	static int verifAndReturnChoiceMenu(String[] menu) {
+		System.out.println("         -=\\`\\\r\n"
+				+ "     |\\ ____\\_\\__\r\n"
+				+ "   -=\\FMS-AirLine`\"\"`)\r\n"
+				+ "      `~~~~~/ /~~`\r\n"
+				+ "        -==/ /");
+		System.out.println("*****************************************");
+		System.out.println("███╗   █████████████╗   ████╗   ██╗\r\n"
+				+ "████╗ ██████╔════████╗  ████║   ██║\r\n"
+				+ "██╔████╔███████╗ ██╔██╗ ████║   ██║\r\n"
+				+ "██║╚██╔╝████╔══╝ ██║╚██╗████║   ██║\r\n"
+				+ "██║ ╚═╝ ███████████║ ╚████╚██████╔╝\r\n"
+				+ "╚═╝     ╚═╚══════╚═╝  ╚═══╝╚═════╝ ");
 		for (String m : menu) System.out.println(m);
+		System.out.println("*****************************************");
 		while(!sc.hasNextInt()) {
+			System.out.println("*****************************************");
+			System.out.println("███╗   █████████████╗   ████╗   ██╗\r\n"
+					+ "████╗ ██████╔════████╗  ████║   ██║\r\n"
+					+ "██╔████╔███████╗ ██╔██╗ ████║   ██║\r\n"
+					+ "██║╚██╔╝████╔══╝ ██║╚██╗████║   ██║\r\n"
+					+ "██║ ╚═╝ ███████████║ ╚████╚██████╔╝\r\n"
+					+ "╚═╝     ╚═╚══════╚═╝  ╚═══╝╚═════╝ ");
 			for (String m : menu) System.out.println(m); 
+			System.out.println("*****************************************");
 			sc.next();
 		}
 		int inputUserChoiceMenu = sc.nextInt();
 		while(inputUserChoiceMenu > menu.length || inputUserChoiceMenu < 0) {
+			System.out.println("*****************************************");
+			System.out.println("███╗   █████████████╗   ████╗   ██╗\r\n"
+					+ "████╗ ██████╔════████╗  ████║   ██║\r\n"
+					+ "██╔████╔███████╗ ██╔██╗ ████║   ██║\r\n"
+					+ "██║╚██╔╝████╔══╝ ██║╚██╗████║   ██║\r\n"
+					+ "██║ ╚═╝ ███████████║ ╚████╚██████╔╝\r\n"
+					+ "╚═╝     ╚═╚══════╚═╝  ╚═══╝╚═════╝ ");
 			for (String m : menu) System.out.println(m);
+			System.out.println("*****************************************");
 			while(!sc.hasNextInt()) sc.next();
 			inputUserChoiceMenu = sc.nextInt();
+	
 		}
 		sc.nextLine();
 		return inputUserChoiceMenu;
