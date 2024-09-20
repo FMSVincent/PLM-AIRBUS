@@ -17,7 +17,7 @@ public class Utils {
 		while(inputUserChoiceMenu > menu.length || inputUserChoiceMenu < 0) {
 			for (String m : menu) System.out.println(m);
 			while(!sc.hasNextInt()) sc.next();
-				inputUserChoiceMenu = sc.nextInt();
+			inputUserChoiceMenu = sc.nextInt();
 		}
 		sc.nextLine();
 		return inputUserChoiceMenu;

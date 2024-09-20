@@ -16,6 +16,7 @@ public class PlmAirBusMain {
 		
 		while(continueProgram.equalsIgnoreCase("o")) {
 			int menuChoosen = Utils.verifAndReturnChoiceMenu(menu);
+
 			if (menuChoosen == 1) {
 				displayPlanes();
 				continueProgram = isBackToMenu();
