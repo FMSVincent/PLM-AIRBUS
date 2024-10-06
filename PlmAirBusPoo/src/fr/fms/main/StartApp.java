@@ -37,11 +37,13 @@ public class StartApp {
 		int inputCategorieSelected = sc.nextInt();
 		if (inputCategorieSelected == 1) {
 			airbusJob.displayPiecesByCategorie(wheels);
+			System.out.println("Entrer id de la piece");
 			int idPieceBought = sc.nextInt();
 			airbusJob.buyPiece(planeSelected, idPieceBought, wheels);
 		}
 		else if (inputCategorieSelected == 2) {
 			airbusJob.displayPiecesByCategorie(wings);
+			System.out.println("Entrer id de la piece");
 			int idPieceBought = sc.nextInt();
 			airbusJob.buyPiece(planeSelected, idPieceBought, wings);
 		}
